@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const { runMagnific } = require("./automation");
+//const { runMagnific } = require("./automation");
 
 const app = express();
 

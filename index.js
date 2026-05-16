@@ -3,6 +3,14 @@ const cors = require("cors");
 //const { runMagnific } = require("./automation");
 
 const app = express();
+async function runMagnific(prompt) {
+
+  return {
+    success: true,
+    prompt
+  };
+
+}
 
 app.use(cors());
 app.use(express.json());

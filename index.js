@@ -101,18 +101,19 @@ app.post("/magnific", async (req, res) => {
   }
 });
 app.get("/test", async (req, res) => {
+
   try {
+
     const result = await runMagnific("test prompt");
 
     res.json(result);
-  } catch (err) {
-    res.status(500).json({
-      error: err.message,
-    });
-  }
-});
-const PORT = process.env.PORT || 4000;
 
-app.listen(PORT, () => {
-  console.log(`Server running on ${PORT}`);
+  } catch (err) {
+
+    res.status(500).json({
+      error: err.message
+    });
+
+  }
+
 });

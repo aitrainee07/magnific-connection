@@ -1,4 +1,4 @@
-npm install puppeteer-extra puppeteer-extra-plugin-stealth
+
 {
   "name": "magnific-connector",
   "puppeteer": {

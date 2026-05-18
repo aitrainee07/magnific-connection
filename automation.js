@@ -16,6 +16,11 @@ async function runMagnific(prompt) {
     waitUntil: "networkidle2"
   });
 
+  await page.screenshot({
+    path: "magnific-home.png",
+    fullPage: true
+  });
+
   const title = await page.title();
 
   await browser.close();

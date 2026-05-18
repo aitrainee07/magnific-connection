@@ -27,7 +27,8 @@ async function runMagnific(prompt) {
 
   return {
     title,
-    prompt
+    prompt,
+    screenshot: "/files/magnific-home.png"
   };
 }
 
